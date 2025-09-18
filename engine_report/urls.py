@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from safety_valve import views as safety_valve_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/safety_valve/', safety_valve_view.SafetyValveList.as_view())
 ]

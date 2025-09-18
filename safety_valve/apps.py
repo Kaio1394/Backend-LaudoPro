@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ValveCalibrationConfig(AppConfig):
+class SafetyValveConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'valve_calibration'
+    name = 'safety_valve'

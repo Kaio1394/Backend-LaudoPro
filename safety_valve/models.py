@@ -10,3 +10,6 @@ class SafetyValve(models.Model):
     model = models.CharField(max_length=100, blank=True, null=True)
     size = models.CharField(max_length=20) 
     actuation_range = models.CharField(max_length=50) 
+    
+    class Meta:
+        db_table = 'safety_valve'

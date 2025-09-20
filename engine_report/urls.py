@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from safety_valve import views as safety_valve_view
+from work_order import views as work_order_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/safety_valve/', safety_valve_view.SafetyValveList.as_view())
+    path('api/safety_valve/', safety_valve_view.SafetyValveList.as_view()),
+    path('api/work_order/', work_order_view.WorkOrderlist.as_view())
 ]

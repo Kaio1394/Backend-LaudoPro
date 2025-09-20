@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'customer',
     'safety_valve',
+    'work_order',
+    'pressure_gauge',
 ]
 
 MIDDLEWARE = [
